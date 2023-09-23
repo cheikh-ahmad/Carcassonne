@@ -1,0 +1,56 @@
+Ce dossier contient un projet de C++ de l'UE Langages à Objets Avancés dont le but est d'implémenter 3 jeux similaires : Dominos, Trax, et Carcassonne. Après un semestre à étudier différents concepts en C++ (POO, templates, exception, etc..), l'objectif a été, de mettre en commun toutes ces connaissances pour programmer ces 3 jeux.
+
+Nous avons utilisé la bibliothèque SFML pour les graphismes 2D de l'application.
+
+## Auteurs :
+- Julien Marie-Anne, numéro étudiant : 22211947 
+- Cheikh Mouhamadou Moustapha Gueye , numéro étudiant : 22220071
+
+## Compilation
+Pour la compilation, il suffit de se positionner dans la racine du dossier et de lancer la commande :
+$ make
+Un programme projet.bin sera compilée.
+
+## Utilisation
+Pour lancer le programme projet.bin, utiliser la commande : 
+$ ./projet.bin
+
+Un menu sous la forme textuelle sera ainsi lancée. Ce menu permet la sélection du jeu ainsi que de sa configuration. Voici le menu en question :
+```
+Menu
+Selectionner votre jeu (par exemple écrire: 1 pour sélectionner le Domino): 
+1) Dominos
+2) Trax
+3) Carcassonne
+Choix :
+```
+
+Il faut sélectionner le jeu en tapant le numéro correspondant, par exemple taper 3 pour lancer le Carcassonne.
+Ensuite, il faut choisir le nombre de joueurs, par exemple 4. En sachant qu'un jeu de Carcassonne se joue entre 2 et 4 joueurs.
+Puis ensuite il faut choisir le nom des différents joueurs.
+Suite à cela, le jeu se lancera.
+
+Voici un exemple de lancement de menu : 
+```
+Menu
+Selectionner votre jeu (par exemple écrire: 1 pour sélectionner le Domino): 
+1) Dominos
+2) Trax
+3) Carcassonne
+Choix :3
+Choisissez le nombre de joueur : 4
+Saisissez le nom des joueurs
+Joueur 1 : Julien
+Joueur 2 : Moustapha 
+Joueur 3 : ProfesseurA
+Joueur 4 : ProfesseurB
+```
+
+Au niveau des entrées :
+Un clic gauche permet de poser une tuile
+Espace permet de passer son tour (s’il est possible de passer son tour, c’est à dire s’il n’y a pas de coup forcé).
+Un clic droit (dans Trax seulement) permet de tourner la tuile.
+Les flèches directionnelles gauche et droite permettent de faire une rotation sur la tuile.
+
+
+
